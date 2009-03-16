@@ -1,0 +1,6 @@
+iDelicious
+==========
+
+If you have ever browsed [Delicious](http://delicious.com/) on a mobile phone
+you know how frustrating navigation is. I started this project to make a
+striped down version of Delicious that could be run on a mobile phone browser.
