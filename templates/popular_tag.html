@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %}Popular {{ tag }} Bookmarks on {{ block.super }}{% endblock %}
+{% block title %}Popular {% for tag in tags %}{% if not forloop.revcounter0 %}and {% endif %}{{ tag }}{% if not forloop.last %}, {% endif %}{% endfor %} Bookmarks on {{ block.super }}{% endblock %}
 
 {% block content_title %}
-	<h2>Popular {{ tag }} Bookmarks</h2>
+	<h2>Popular {% for tag in tags %}{% if not forloop.revcounter0 %}and {% endif %}<a href="/tag/{{ tag }}">{{ tag }}</a>{% if not forloop.last %}, {% endif %}{% endfor %} Bookmarks</h2>
 {% endblock %}
 
 {% block content %}

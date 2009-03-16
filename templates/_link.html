@@ -1,5 +1,5 @@
 <div class="link">
 	<h3><a href="{{ link.u }}">{{ link.d }}</a></h3>
 	<p class="date">{{ link.dt }}</p>
-	<p class="tags">{% for tag in link.t %}{{ tag }} {% endfor %}</p>
+	<p class="tags">{% for tag in link.t %}{% if not forloop.revcounter0 %}and {% endif %}<a href="/tag/{{ tag }}/">{{ tag }}</a>{% if not forloop.last %}, {% endif %}{% endfor %}</p>
 </div>

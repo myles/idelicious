@@ -22,3 +22,5 @@ MEDIA_URL = '/meida/'
 DELICIOUS_API_URL = 'feeds.delicious.com'
 
 TEMPLATE_CONTEXT_PROCESSORS = ()
+
+INSTALLED_APPS = ()

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Everyone's bookmarks for {{ main_url.d|truncatewords:10 }} on {{ block.super }}{% endblock %}
+
+{% block content_title %}
+	<h2>Everyone's bookmarks for <a href="{{ main_url.u }}">{{ main_url.d }}</a> on iDelicious</h2>
+{% endblock %}
+
+{% block content %}
+	{% for link in url %}{% include "_link.html" %}{% endfor %}
+{% endblock %}

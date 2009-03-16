@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %}Recent {{ tag }} Bookmarks on {{ block.super }}{% endblock %}
+{% block title %}Recent {% for tag in tags %}{% if not forloop.revcounter0 %}and {% endif %}{{ tag }}{% if not forloop.last %}, {% endif %}{% endfor %} Bookmarks on {{ block.super }}{% endblock %}
 
 {% block content_title %}
-	<h2>{% for tag in tags %}<a href="{{ tag }}">{{ tag }}</a>{% if not forloop.last %}+{% endif %}{% endfor %}</h2>
+	<h2>Recent {% for tag in tags %}{% if not forloop.revcounter0 %}and {% endif %}<a href="/tag/{{ tag }}">{{ tag }}</a>{% if not forloop.last %}, {% endif %}{% endfor %} Bookmarks on iDelicious</h2>
 {% endblock %}
 
 {% block content %}
