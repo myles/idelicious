@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Recent {{ tag }} Bookmarks on {{ block.super }}{% endblock %}
+
+{% block content_title %}
+	<h2>{% for tag in tags %}<a href="{{ tag }}">{{ tag }}</a>{% if not forloop.last %}+{% endif %}{% endfor %}</h2>
+{% endblock %}
+
+{% block content %}
+	{% for link in links %}{% include "_link.html" %}{% endfor %}
+{% endblock %}

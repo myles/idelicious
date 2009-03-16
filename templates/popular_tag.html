@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Popular {{ tag }} Bookmarks on {{ block.super }}{% endblock %}
+
+{% block content_title %}
+	<h2>Popular {{ tag }} Bookmarks</h2>
+{% endblock %}
+
+{% block content %}
+	{% for link in links %}{% include "_link.html" %}{% endfor %}
+{% endblock %}
