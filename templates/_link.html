@@ -1,3 +1,5 @@
 <div class="link">
 	<h3><a href="{{ link.u }}">{{ link.d }}</a></h3>
+	<p class="date">{{ link.dt }}</p>
+	<p class="tags">{% for tag in link.t %}{{ tag }} {% endfor %}</p>
 </div>

@@ -2,10 +2,6 @@
 
 {% block title %}{{ block.super }}{% endblock %}
 
-{% block content_title %}
-	<h2>iDelicious</h2>
-{% endblock %}
-
 {% block content %}
 	{% for link in links %}{% include "_link.html" %}{% endfor %}
 {% endblock %}

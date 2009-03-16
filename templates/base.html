@@ -7,9 +7,18 @@
 	<title>{% block title %}iDelicious{% endblock %}</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Myles Braithwaite">
+	<link rel="stylesheet" href="/media/style.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
-	{% block content_title %}{% endblock %}
-	{% block content %}{% endblock %}
+	<div id="header">
+		<h1 id="idelicious"><a href="/">iDelicious</a></h1>
+	</div>
+	<div id="body">
+		{% block content_title %}{% endblock %}
+		{% block content %}{% endblock %}
+	</div>
+	<div id="footer">
+		<p><small>A <a href="http://mylesbraithwaite.com/">Myles Braithwaite</a> website.</small></p>
+	</div>
 </body>
 </html>

@@ -1,0 +1,15 @@
+/* @override http://127.0.0.1:8080/media/style.css */
+
+body { font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; margin: 0; }
+
+#header { background-color: #003e85; margin: 0; padding: .4em; }
+#header h1 { margin: 0; padding: 0; }
+#header h1 a { color: #fff; text-decoration: none; }
+
+#body { margin: 0 1em; }
+#body h3 { margin: 1em 0 0 0; }
+#body p { margin: 0; font-size: .8em; }
+
+#footer { margin: 0 1em; }
+#footer p, #footer a { color: #333; }
+#footer a { text-decoration: none; font-weight: bold; }
