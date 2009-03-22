@@ -4,3 +4,8 @@ iDelicious
 If you have ever browsed [Delicious](http://delicious.com/) on a mobile phone
 you know how frustrating navigation is. I started this project to make a
 striped down version of Delicious that could be run on a mobile phone browser.
+
+*	[Homepage](http://myles.github.com/idelicious/)
+*	[Demo](http://i-del-icio-us.appspot.com/)
+*	[Source](http://github.com/myles/idelicious/tree/master)
+*	[Issue Tracker](http://myles.lighthouseapp.com/projects/27839-idelicious/overview)
